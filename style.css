@@ -151,16 +151,14 @@ header a:hover {
   transition: transform ease 0.1s;
 }
 
-.slick-center img {
-  transform: scale(1.2);
-}
-
 .slick-slide {
-  opacity: 0.8;
+  opacity: 0.1;
+  transform: scale(0.9);
 }
 
 .slick-center {
   opacity: 1;
+  transform: scale(1);
 }
 
 .slider-nav {
@@ -177,17 +175,21 @@ header a:hover {
   margin: 0 200px;
   cursor: pointer;
   font-size: 50px;
+  transition: background ease 0.1s, color ease 0.1s, transform ease 0.1s;
 }
 
 .prev-button:hover,
 .next-button:hover {
-  background: #f0f0f0;
+  background: #000000;
+  color: white;
+  transform: scale(1.05);
 }
 
 .fanfik {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 151px;
 }
 .fanfik p, .fanfik h3 {
   text-align: center;
@@ -211,4 +213,30 @@ header a:hover {
   height: 5px;
   border-radius: 3px;
   background-color: black;
+}
+
+.assoc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 151px;
+}
+.assoc h3 {
+  font-size: 48px;
+  font-weight: normal;
+  margin-bottom: 75px;
+}
+.assoc h3, .assoc p {
+  text-align: center;
+}
+.assoc p {
+  font-size: 32px;
+  width: 800px;
+}
+.assoc .devider {
+  width: 500px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: black;
+  margin-top: 114px;
 }/*# sourceMappingURL=style.css.map */
