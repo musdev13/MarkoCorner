@@ -72,10 +72,34 @@ header a:hover {
   flex-direction: column;
   align-items: center;
 }
-.wnow p {
+.wnow p, .wnow .endtext {
   font-size: 48px;
   text-align: center;
   margin-bottom: 34px;
+}
+.wnow p .cursor, .wnow .endtext .cursor {
+  background-color: black;
+  width: 20px;
+  height: 50px;
+  transition: none;
+  animation: blink 1s infinite cubic-bezier(0, 1.1, 0, 1);
+}
+@keyframes blink {
+  0% {
+    height: 50px;
+  }
+  50% {
+    height: 5px;
+  }
+  100% {
+    height: 50px;
+  }
+}
+.wnow .endtext {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 15px;
 }
 .wnow button {
   font-size: 36px;
@@ -93,10 +117,69 @@ header a:hover {
   background-color: black;
   color: white;
 }
+.wnow button span {
+  text-decoration: underline;
+}
 .wnow .devider {
   width: 500px;
   height: 5px;
   border-radius: 3px;
   background-color: black;
-  margin-bottom: 32px;
+}
+
+.gallery {
+  margin-top: 151px;
+  margin-bottom: 200px;
+}
+.gallery .container {
+  border: 5px solid black;
+  padding: 75px 50px;
+  border-radius: 15px;
+}
+.gallery h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 151px;
+}
+.gallery .photos {
+  width: 100%;
+  margin: 0 auto;
+}
+.gallery .photos img {
+  padding: 0 10px;
+  transition: transform ease 0.1s;
+}
+
+.slick-center img {
+  transform: scale(1.2);
+}
+
+.slick-slide {
+  opacity: 0.8;
+}
+
+.slick-center {
+  opacity: 1;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 52px;
+}
+
+.prev-button,
+.next-button {
+  background: #fff;
+  border: 5px solid black;
+  padding: 10px 30px;
+  border-radius: 15px;
+  margin: 0 200px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background: #f0f0f0;
 }/*# sourceMappingURL=style.css.map */
