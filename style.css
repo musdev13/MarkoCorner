@@ -129,7 +129,7 @@ header a:hover {
 
 .gallery {
   margin-top: 151px;
-  margin-bottom: 200px;
+  margin-bottom: 347px;
 }
 .gallery .container {
   border: 5px solid black;
@@ -182,4 +182,33 @@ header a:hover {
 .prev-button:hover,
 .next-button:hover {
   background: #f0f0f0;
+}
+
+.fanfik {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fanfik p, .fanfik h3 {
+  text-align: center;
+}
+.fanfik p {
+  font-size: 36px;
+  width: 800px;
+  margin-bottom: 151px;
+}
+.fanfik h3 {
+  font-size: 64px;
+  font-weight: normal;
+  margin-top: 151px;
+  margin-bottom: 74px;
+}
+.fanfik h3 span {
+  text-decoration: underline;
+}
+.fanfik .devider {
+  width: 500px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */
