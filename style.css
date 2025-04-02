@@ -25,10 +25,27 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
+}
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+  }
 }
 
 .bodycontainer {
   width: 1150px;
+}
+@media (max-width: 768px) {
+  .bodycontainer {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .bodycontainer {
+    width: 95%;
+    overflow: hidden;
+  }
 }
 
 header {
@@ -37,6 +54,39 @@ header {
   align-items: center;
   font-size: 32px;
   margin-top: 32px;
+}
+@media (max-width: 768px) {
+  header {
+    font-size: 24px;
+  }
+  header p {
+    font-size: 32px;
+  }
+  header .first {
+    margin-right: 30px;
+  }
+  header .devider {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 20px;
+  }
+  header p {
+    font-size: 28px;
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+  header .devider {
+    display: none;
+  }
+  header .first {
+    margin-right: 15px;
+  }
 }
 header p {
   font-size: 40px;
@@ -71,6 +121,32 @@ header a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .wnow {
+    margin-top: 150px;
+  }
+  .wnow p, .wnow .endtext {
+    font-size: 36px;
+  }
+  .wnow button {
+    font-size: 30px;
+    width: 280px;
+    height: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .wnow {
+    margin-top: 100px;
+  }
+  .wnow p, .wnow .endtext {
+    font-size: 28px;
+  }
+  .wnow button {
+    font-size: 24px;
+    width: 240px;
+    height: 50px;
+  }
 }
 .wnow p, .wnow .endtext {
   font-size: 48px;
@@ -108,7 +184,6 @@ header a:hover {
   border-radius: 15px;
   width: 320px;
   height: 70px;
-  margin-bottom: 347px;
   cursor: pointer;
   transition: transform ease 0.1s, background ease 0.1s, color ease 0.1s;
 }
@@ -126,21 +201,54 @@ header a:hover {
   border-radius: 3px;
   background-color: black;
 }
+.wnow a {
+  margin-bottom: 347px;
+}
 
 .gallery {
-  margin-top: 151px;
+  margin-top: 75px;
   margin-bottom: 347px;
+}
+@media (max-width: 480px) {
+  .gallery {
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
 }
 .gallery .container {
   border: 5px solid black;
   padding: 75px 50px;
   border-radius: 15px;
 }
+@media (max-width: 768px) {
+  .gallery .container {
+    padding: 40px 25px;
+  }
+}
+@media (max-width: 480px) {
+  .gallery .container {
+    padding: 15px 5px;
+    border-width: 3px;
+    width: 100%;
+  }
+}
 .gallery h3 {
   text-align: center;
   font-size: 40px;
   font-weight: normal;
   margin-bottom: 151px;
+}
+@media (max-width: 768px) {
+  .gallery h3 {
+    font-size: 32px;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .gallery h3 {
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
 }
 .gallery .photos {
   width: 100%;
@@ -149,6 +257,16 @@ header a:hover {
 .gallery .photos img {
   padding: 0 10px;
   transition: transform ease 0.1s;
+}
+@media (max-width: 480px) {
+  .gallery .photos {
+    width: 100%;
+  }
+  .gallery .photos img {
+    padding: 0 5px;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .slick-slide {
@@ -177,6 +295,22 @@ header a:hover {
   font-size: 50px;
   transition: background ease 0.1s, color ease 0.1s, transform ease 0.1s;
 }
+@media (max-width: 768px) {
+  .prev-button,
+  .next-button {
+    margin: 0 100px;
+    font-size: 40px;
+    padding: 8px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .prev-button,
+  .next-button {
+    margin: 0 30px;
+    font-size: 30px;
+    padding: 5px 15px;
+  }
+}
 
 .prev-button:hover,
 .next-button:hover {
@@ -199,6 +333,18 @@ header a:hover {
   width: 800px;
   margin-bottom: 151px;
 }
+@media (max-width: 768px) {
+  .fanfik p {
+    width: 90%;
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .fanfik p {
+    width: 95%;
+    font-size: 24px;
+  }
+}
 .fanfik h3 {
   font-size: 64px;
   font-weight: normal;
@@ -208,23 +354,53 @@ header a:hover {
 .fanfik h3 span {
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  .fanfik h3 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .fanfik h3 {
+    font-size: 32px;
+  }
+}
 .fanfik .devider {
   width: 500px;
   height: 5px;
   border-radius: 3px;
   background-color: black;
 }
+@media (max-width: 768px) {
+  .fanfik .devider {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .fanfik .devider {
+    width: 90%;
+  }
+}
 
 .assoc {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 151px;
+  margin-bottom: 114px;
 }
 .assoc h3 {
   font-size: 48px;
   font-weight: normal;
   margin-bottom: 75px;
+}
+@media (max-width: 768px) {
+  .assoc h3 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .assoc h3 {
+    font-size: 32px;
+  }
 }
 .assoc h3, .assoc p {
   text-align: center;
@@ -233,10 +409,97 @@ header a:hover {
   font-size: 32px;
   width: 800px;
 }
+@media (max-width: 768px) {
+  .assoc p {
+    width: 90%;
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .assoc p {
+    width: 95%;
+    font-size: 24px;
+  }
+}
 .assoc .devider {
   width: 500px;
   height: 5px;
   border-radius: 3px;
   background-color: black;
   margin-top: 114px;
+}
+@media (max-width: 768px) {
+  .assoc .devider {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .assoc .devider {
+    width: 90%;
+  }
+}
+
+.mcg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 114px;
+}
+.mcg h3 {
+  font-size: 48px;
+  font-weight: normal;
+  margin-bottom: 75px;
+}
+@media (max-width: 768px) {
+  .mcg h3 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .mcg h3 {
+    font-size: 32px;
+  }
+}
+.mcg h3, .mcg p {
+  text-align: center;
+}
+.mcg p {
+  font-size: 32px;
+  width: 800px;
+}
+@media (max-width: 768px) {
+  .mcg p {
+    width: 90%;
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .mcg p {
+    width: 95%;
+    font-size: 24px;
+  }
+}
+.mcg img {
+  margin-top: 57px;
+  margin-bottom: 57px;
+}
+@media (max-width: 768px) {
+  .mcg img {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .mcg img {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .mcg .devider {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .mcg .devider {
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */

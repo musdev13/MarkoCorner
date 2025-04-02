@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Уголочек Бомбера</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
@@ -103,6 +103,21 @@
             </p>
             <div class="devider"></div>
         </section>
+
+        <section class="mcg">
+            <h3>Игруля от Мусюля(мне стыдно)</h3>
+            <p>
+                Здесь изначально задумывалось добавить ссылку для скачивания игры и чота таво, но я ещё сам движок не доделал и паэтому игры нет... прости, я не успеваю.<br><br>
+                У меня депрессия.<br><br>
+                Вот пока-что скриншотек какои-та.
+            </p>
+            <img src="img/mcg.png" alt="dev screenshot">
+            <p>
+                Этого не будет в игре, потому что я уже успел испоганить это и вообще я всё с нуля переделаю, когда уже доделаю движок.<br><br>
+                Нужно было сначала до конца движок доделать, а уже потом делать уровни...<br><br>
+                В общем, когда игра будет уже доступна, то она появится здесь =3
+            </p>
+        </section>
     </div>
 
     <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
@@ -117,13 +132,23 @@
                 slidesToScroll: 1,
                 arrows: false, // Отключаем стандартные стрелки
                 infinite: true,
-                responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        centerMode: true
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            centerMode: true
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            centerMode: true,
+                            centerPadding: '40px'
+                        }
                     }
-                }]
+                ]
             });
 
             // Добавляем обработчики для кнопок
